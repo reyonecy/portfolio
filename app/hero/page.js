@@ -5,8 +5,8 @@ export const Hero = () => {
   return (
     <div className=" mt-10 h-full flex px-40 justify-between pt-20 pb-20 text-white ">
       <div className="w-1/2 flex flex-col space-y-5">
-        <h1 className="text-4xl font-bold hover:text-red-500 cursor-default transition duration-800 ease-in">Reyone chaudhary</h1>
-        <h2 className="text-2xl ml-12 pl-4 font-semibold w-60 hover:text-red-500   cursor-default">Software Engineer</h2>
+        <h1 className="text-4xl font-bold hover:text-red-500 cursor-default  w-96 transition duration-800 ease-in">Reyone chaudhary</h1>
+        <h2 className="text-2xl ml-12 pl-4 font-semibold w-64 hover:text-red-500   cursor-default">Software Engineer</h2>
         <p className="text-xl  cursor-default ">
           I'm a passionate software developer with an insatiable appetite for
           learning. My journey in this field is fueled by constant self-study

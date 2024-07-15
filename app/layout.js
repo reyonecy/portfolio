@@ -1,8 +1,14 @@
-import { Inter } from "next/font/google";
+import { Inter,Chelsea_Market,} from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./navbar/page";
 
 const inter = Inter({ subsets: ["latin"] });
+const chelsea_Market = Chelsea_Market(
+  {
+  weight:['400'],
+  subsets:['latin']
+  }
+)
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black">
+      <body  className={`${chelsea_Market.className} bg-black`}>
         <Navbar/>
         <div>{children}</div>
     </body>
