@@ -1,6 +1,7 @@
 import { Inter,Chelsea_Market,} from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./navbar/page";
+import Footer from "./components/footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 const chelsea_Market = Chelsea_Market(
@@ -18,9 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body  className={`${chelsea_Market.className} bg-black`}>
+      <body  className={`${chelsea_Market.className} bg-black text-white `}>
         <Navbar/>
         <div>{children}</div>
+        <Footer/>
     </body>
     
     </html>
