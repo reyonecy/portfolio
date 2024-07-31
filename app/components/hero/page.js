@@ -15,7 +15,7 @@ export const Hero = () => {
         </p>
       </div>
       <div className="1/2  -mt-4  ">
-      <Image className=" transition duration-300 ease-in-out rounded-full hover:shadow-red-500/50 hover:shadow-xl" src="/profile.jpg" width={350} height={350}/>
+      <Image alt="myimage" className=" transition duration-300 ease-in-out rounded-full hover:shadow-red-500/50 hover:shadow-xl" src="/profile.jpg" width={350} height={350}/>
     </div>
     </div>
     </>
