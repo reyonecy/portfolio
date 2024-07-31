@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
-import About from '../components/about/page';
+
 
 
 export const Navbar = () => {
@@ -22,9 +22,9 @@ export const Navbar = () => {
 
             </div>
             <div className='flex items-center space-x-10 text-xl'>
-                <Link href= '/components/about/page.js' className='hover:text-red-700 font-bold'>About</Link>
-                <Link href="" className='hover:text-red-700 font-bold'>Projects</Link>
-                <Link href="" className='hover:text-red-700 font-bold'>Contact</Link>
+                
+                <Link href="/components/projects/" className='hover:text-red-700 font-bold'>Projects</Link>
+                <Link href="/components/contact" className='hover:text-red-700 font-bold'>Contact</Link>
             </div>
     </div>
   )

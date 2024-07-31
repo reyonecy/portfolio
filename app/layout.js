@@ -1,6 +1,6 @@
 import { Inter,Chelsea_Market,} from "next/font/google";
 import "./globals.css";
-import { Navbar } from "./navbar/page";
+import { Navbar } from "./components/navbar/page";
 import Footer from "./components/footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
