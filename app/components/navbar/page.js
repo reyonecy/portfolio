@@ -7,7 +7,7 @@ import XIcon from '@mui/icons-material/X';
 
 
 
-export const Navbar = () => {
+export default function Navbar () {
   return (
     <div className='fixed z-10 flex hover:brightness-150 hover:ease-in-out hover:duration-700 top-0 bg-black text-white h-16 justify-between shadow-red-800 px-20 shadow-lg w-full '>
         <div className='flex items-center '>
