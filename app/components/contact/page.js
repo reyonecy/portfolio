@@ -17,7 +17,7 @@ export default function Contact() {
     <div className='mt-28 mx-20'>
         <p className='text-xl'>-- Greetings <span className='text-2xl'>🤝</span></p>
         <h2 className='text-4xl mt-6'>Want To collaborate ?</h2>
-        <p className='mt-4 opacity-55'>Let's join forces and create something incredible together! Any ideas or preferences ?</p>
+        <p className='mt-4 opacity-55'>Lets join forces and create something incredible together! Any ideas or preferences ?</p>
         <div className='mt-10 space-y-4 text-lg'>
           <div className='flex space-x-5'><LinkedInIcon color=''/><p>Reyone Chaudhary</p></div>
           <div className='flex space-x-5'><MarkunreadOutlined color=''/><p>reyonechaudhary@gmail.com</p></div>
