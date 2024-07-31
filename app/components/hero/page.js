@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 
-export const Hero = () => {
+export default function Hero () {
   return (
     <>
     <div className=" mt-16 h-full flex px-40 justify-between pt-20 pb-20 text-white ">
