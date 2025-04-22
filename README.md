@@ -16,9 +16,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript, React.js, Bootstrap
-- **Backend:** Node.js, Express.js (if applicable)
-- **Database:** MongoDB (if applicable)
+- **Frontend:** HTML, CSS, JavaScript, Next.js, Tailwindcss
 - **Deployment:** Deployed on Vercel
 
 ---
