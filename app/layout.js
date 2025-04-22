@@ -19,6 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    
+     
+      
       <body  className={`${chelsea_Market.className} bg-black text-white `}>
         <Navbar/>
         <div>{children}</div>

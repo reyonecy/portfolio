@@ -5,8 +5,8 @@ export default function Qualifications() {
   return (
     <>
       <h3 className="text-2xl text-center">My Journey</h3>
-      <div className=" flex mt-8">
-        <div className=" w-96 ml-40">
+      <div className="  flex mt-8">
+        <div className=" w-96  ml-40">
           <div className="flex mb-8 text-red-500">
             <span className="">
               <WorkOutlineIcon />
