@@ -1,6 +1,3 @@
-Here's a sample README for your portfolio project:
-
----
 
 # Portfolio
 
@@ -78,6 +75,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Thank you for visiting! 🙌
 
----
 
-You can personalize this as needed by replacing the placeholders and updating the technologies or sections based on your actual portfolio details. Let me know if you'd like to tweak anything!
