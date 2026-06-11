@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 py-16 md:px-12 lg:px-24 lg:py-24;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-100/50 p-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-medium rounded-lg transition-all duration-200 hover:bg-accent-hover;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent text-text-primary font-medium rounded-lg border border-gray-300 transition-all duration-200 hover:bg-background-secondary;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-text-primary;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-heading font-semibold text-text-primary;
+  }
+
+  .heading-md {
+    @apply text-2xl md:text-3xl font-heading font-medium text-text-primary;
+  }
+
+  .text-body {
+    @apply text-base md:text-lg text-text-secondary leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

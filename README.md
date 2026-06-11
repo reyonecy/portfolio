@@ -1,77 +1,107 @@
+# Reyone Chaudhary - Portfolio
 
-# Portfolio [Link](https://portfolio-delta-weld-75.vercel.app/)
- 
-
-Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a developer. Here, you’ll find a collection of my work, including web applications, coding challenges, and other personal projects. Feel free to explore and learn more about what I do!
-
----
+A clean, minimalistic, and professional portfolio website showcasing my work in Data Science, AI, and Software Development.
 
 ## Features
 
-- **Home Page:** A personalized introduction with a brief overview of who I am.
-- **Projects Section:** A showcase of the projects I've worked on, complete with descriptions and links to the source code or live demos.
-- **About Me:** An in-depth look at my background, skills, and experience.
-- **Contact Section:** A form for visitors to reach out or get in touch with me.
-  
----
+- **Hero Section** - Professional introduction with headline and CTAs
+- **About Me** - Personal narrative and background
+- **Featured Projects** - Showcase of key projects with elegant cards
+- **Skills** - Organized by category (Data, AI/ML, Web Dev, Tools)
+- **Journey Timeline** - Education and career milestones
+- **Certifications** - Filterable certification cards
+- **Education** - Academic background with coursework
+- **Contact** - Contact form with social links
 
-## Technologies Used
+## Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript, Next.js, Tailwindcss
-- **Deployment:** Deployed on Vercel
+- **Next.js 15** - App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Subtle animations
+- **Lucide React** - Icons
 
----
-
-## Installation
+## Getting Started
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/reyonecy/portfolio.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
    cd portfolio
    ```
 
-3. Install dependencies (if using any):
-
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-4. Run the development server:
-
+3. Run the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
-   This will open the portfolio locally on your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
----
+## Deployment to Vercel
 
-## Contributing
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
 
-Feel free to fork the project and create a pull request. I welcome suggestions and improvements!
+### Custom Domain Setup
 
----
+1. In Vercel, go to your project settings
+2. Add your custom domain (e.g., `yourname.com.np`)
+3. Update DNS records at your domain registrar:
+   - Add A record pointing to Vercel's IP
+   - Add CNAME for `www` subdomain
+4. SSL is automatically configured by Vercel
+
+## Project Structure
+
+```
+app/
+  layout.tsx      # Root layout with fonts
+  page.tsx        # Main page
+  globals.css     # Global styles
+
+components/
+  Navbar.tsx      # Navigation component
+  Footer.tsx      # Footer component
+
+sections/
+  Hero.tsx        # Hero section
+  About.tsx       # About section
+  Projects.tsx    # Projects section
+  Skills.tsx      # Skills section
+  Journey.tsx      # Journey timeline
+  Certifications.tsx
+  Education.tsx
+  Contact.tsx
+
+lib/
+  data.ts         # Portfolio data
+  animations.tsx  # Framer Motion components
+
+types/
+  index.ts        # TypeScript interfaces
+```
+
+## Customization
+
+Update your personal information in `lib/data.ts`:
+- Personal details
+- Projects
+- Skills
+- Certifications
+- Education
+- Experience
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+MIT License
 
 ## Contact
 
-- **Email:** [reyonechaudhary@gmail.com]
-- **LinkedIn:** [https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/reyone-chaudhary-359038271/)
-
-
----
-
-### Thank you for visiting! 🙌
-
-
+- Email: reyonechaudhary@gmail.com
+- LinkedIn: [reyone-chaudhary-359038271](https://www.linkedin.com/in/reyone-chaudhary-359038271/)
+- GitHub: [@reyonecy](https://github.com/reyonecy)
