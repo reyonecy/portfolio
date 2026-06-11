@@ -60,7 +60,7 @@ export default function Journey() {
         <div className="max-w-3xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 md:-translate-x-1/2" />
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-700 md:-translate-x-1/2" />
 
             <FadeInStagger className="space-y-8">
               {journeyItems.map((item, idx) => (
@@ -71,7 +71,7 @@ export default function Journey() {
                     }`}
                   >
                     {/* Icon */}
-                    <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-8 h-8 bg-background border-2 border-accent rounded-full flex items-center justify-center z-10">
+                    <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-8 h-8 bg-background dark:bg-background-dark border-2 border-accent rounded-full flex items-center justify-center z-10">
                       {getIcon(item.type)}
                     </div>
 
@@ -85,14 +85,14 @@ export default function Journey() {
                         <span className="text-xs text-accent font-medium">
                           {item.date}
                         </span>
-                        <h3 className="font-heading text-lg font-semibold mt-1">
+                        <h3 className="font-heading text-lg font-semibold mt-1 text-text-primary dark:text-text-dark-primary">
                           {item.title}
                         </h3>
-                        <p className="text-text-secondary text-sm mt-1">
+                        <p className="text-text-secondary dark:text-text-dark-secondary text-sm mt-1">
                           {item.organization}
                         </p>
                         {item.description && (
-                          <p className="text-text-secondary text-sm mt-2">
+                          <p className="text-text-secondary dark:text-text-dark-secondary text-sm mt-2">
                             {item.description}
                           </p>
                         )}

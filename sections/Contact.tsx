@@ -17,7 +17,6 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     setSubmitted(true);
@@ -25,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-background-secondary">
+    <section id="contact" className="section-padding section-alt">
       <div className="section-container">
         <FadeIn>
           <h2 className="heading-lg mb-4 text-center">Get In Touch</h2>
@@ -39,9 +38,9 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <FadeIn delay={0.2}>
             <div className="space-y-6">
-              <p className="text-text-secondary">
-                I'm always open to discussing new projects, creative ideas,
-                or opportunities to be part of your vision.
+              <p className="text-text-secondary dark:text-text-dark-secondary">
+                I'm always open to discussing new data projects, ML research ideas,
+                or opportunities to collaborate on AI initiatives.
               </p>
 
               <div className="space-y-4">
@@ -50,10 +49,10 @@ export default function Contact() {
                     <Mail className="text-accent" size={18} />
                   </div>
                   <div>
-                    <p className="text-sm text-text-secondary">Email</p>
+                    <p className="text-sm text-text-secondary dark:text-text-dark-secondary">Email</p>
                     <a
                       href={`mailto:${personalInfo.email}`}
-                      className="text-text-primary hover:text-accent transition-colors"
+                      className="text-text-primary dark:text-text-dark-primary hover:text-accent transition-colors"
                     >
                       {personalInfo.email}
                     </a>
@@ -65,10 +64,10 @@ export default function Contact() {
                     <Phone className="text-accent" size={18} />
                   </div>
                   <div>
-                    <p className="text-sm text-text-secondary">Phone</p>
+                    <p className="text-sm text-text-secondary dark:text-text-dark-secondary">Phone</p>
                     <a
                       href={`tel:${personalInfo.phone}`}
-                      className="text-text-primary hover:text-accent transition-colors"
+                      className="text-text-primary dark:text-text-dark-primary hover:text-accent transition-colors"
                     >
                       {personalInfo.phone}
                     </a>
@@ -80,8 +79,8 @@ export default function Contact() {
                     <MapPin className="text-accent" size={18} />
                   </div>
                   <div>
-                    <p className="text-sm text-text-secondary">Location</p>
-                    <p className="text-text-primary">{personalInfo.location}</p>
+                    <p className="text-sm text-text-secondary dark:text-text-dark-secondary">Location</p>
+                    <p className="text-text-primary dark:text-text-dark-primary">{personalInfo.location}</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +90,7 @@ export default function Contact() {
                   href={personalInfo.social.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-background rounded-lg flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all"
+                  className="w-10 h-10 bg-background dark:bg-background-dark rounded-lg flex items-center justify-center text-text-secondary dark:text-text-dark-secondary hover:text-accent hover:bg-accent/10 transition-all"
                   aria-label="GitHub"
                 >
                   <Github size={18} />
@@ -100,7 +99,7 @@ export default function Contact() {
                   href={personalInfo.social.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-background rounded-lg flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all"
+                  className="w-10 h-10 bg-background dark:bg-background-dark rounded-lg flex items-center justify-center text-text-secondary dark:text-text-dark-secondary hover:text-accent hover:bg-accent/10 transition-all"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={18} />
@@ -109,7 +108,7 @@ export default function Contact() {
                   href={personalInfo.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-background rounded-lg flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all"
+                  className="w-10 h-10 bg-background dark:bg-background-dark rounded-lg flex items-center justify-center text-text-secondary dark:text-text-dark-secondary hover:text-accent hover:bg-accent/10 transition-all"
                   aria-label="Instagram"
                 >
                   <Instagram size={18} />
@@ -118,7 +117,7 @@ export default function Contact() {
                   href={personalInfo.social.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-background rounded-lg flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all"
+                  className="w-10 h-10 bg-background dark:bg-background-dark rounded-lg flex items-center justify-center text-text-secondary dark:text-text-dark-secondary hover:text-accent hover:bg-accent/10 transition-all"
                   aria-label="Twitter"
                 >
                   <Twitter size={18} />
@@ -130,7 +129,7 @@ export default function Contact() {
           <FadeIn delay={0.3}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-text-primary dark:text-text-dark-primary mb-2">
                   Name
                 </label>
                 <input
@@ -139,13 +138,13 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all"
+                  className="w-full px-4 py-3 bg-background dark:bg-background-dark border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all text-text-primary dark:text-text-dark-primary"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-text-primary dark:text-text-dark-primary mb-2">
                   Email
                 </label>
                 <input
@@ -154,13 +153,13 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all"
+                  className="w-full px-4 py-3 bg-background dark:bg-background-dark border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all text-text-primary dark:text-text-dark-primary"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-text-primary dark:text-text-dark-primary mb-2">
                   Message
                 </label>
                 <textarea
@@ -169,7 +168,7 @@ export default function Contact() {
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all resize-none"
+                  className="w-full px-4 py-3 bg-background dark:bg-background-dark border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all resize-none text-text-primary dark:text-text-dark-primary"
                   placeholder="Your message..."
                 />
               </div>

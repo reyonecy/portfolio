@@ -2,11 +2,11 @@ import { Project, Certification, Experience, Education, Skill } from '@/types';
 
 export const personalInfo = {
   name: 'Reyone Chaudhary',
-  headline: 'Data Enthusiast | AI Developer | Software Engineer',
+  headline: 'Data Enthusiast | AI Developer | ML Engineer',
   email: 'reyonechaudhary@gmail.com',
   phone: '+977 9849183153',
   location: 'Kathmandu, Nepal',
-  bio: 'I am a passionate Data & AI enthusiast with a strong foundation in software development. My journey in technology is driven by curiosity and a desire to build practical solutions that make a difference. I specialize in turning data into insights and building intelligent applications that solve real-world problems.',
+  bio: 'I am a Data & AI enthusiast passionate about transforming raw data into actionable insights and building intelligent systems. My journey is driven by curiosity and a desire to leverage machine learning and data analytics to solve real-world problems.',
   social: {
     github: 'https://github.com/reyonecy',
     linkedin: 'https://www.linkedin.com/in/reyone-chaudhary-359038271/',
@@ -16,12 +16,14 @@ export const personalInfo = {
 };
 
 export const skills: Skill[] = [
-  // Data
+  // Data Analytics
   { name: 'SQL', category: 'Data' },
   { name: 'Power BI', category: 'Data' },
   { name: 'Excel', category: 'Data' },
   { name: 'Data Analysis', category: 'Data' },
   { name: 'Data Visualization', category: 'Data' },
+  { name: 'Statistical Analysis', category: 'Data' },
+  { name: 'Tableau', category: 'Data' },
   // AI & ML
   { name: 'Python', category: 'AI & ML' },
   { name: 'NumPy', category: 'AI & ML' },
@@ -31,53 +33,48 @@ export const skills: Skill[] = [
   { name: 'PyTorch', category: 'AI & ML' },
   { name: 'Computer Vision', category: 'AI & ML' },
   { name: 'YOLO', category: 'AI & ML' },
-  // Web Development
-  { name: 'Next.js', category: 'Web Development' },
-  { name: 'React', category: 'Web Development' },
-  { name: 'Tailwind CSS', category: 'Web Development' },
-  { name: 'Django', category: 'Web Development' },
-  { name: 'Django REST Framework', category: 'Web Development' },
-  { name: 'Node.js', category: 'Web Development' },
-  { name: 'MongoDB', category: 'Web Development' },
-  { name: 'PostgreSQL', category: 'Web Development' },
+  { name: 'Natural Language Processing', category: 'AI & ML' },
+  { name: 'Deep Learning', category: 'AI & ML' },
+  { name: 'OpenCV', category: 'AI & ML' },
+  { name: 'Jupyter Notebook', category: 'AI & ML' },
   // Tools
   { name: 'Git', category: 'Tools' },
   { name: 'GitHub', category: 'Tools' },
   { name: 'Linux', category: 'Tools' },
   { name: 'Docker', category: 'Tools' },
   { name: 'VS Code', category: 'Tools' },
-  { name: 'Postman', category: 'Tools' },
+  { name: 'Google Colab', category: 'Tools' },
+  { name: 'Jupyter', category: 'Tools' },
 ];
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'GharBikri',
-    description: 'A real estate platform built to help users find properties in Nepal. Features advanced search, property listings, and user authentication.',
+    title: 'Predictive Analytics Dashboard',
+    description: 'A comprehensive data analytics dashboard that processes large datasets and generates predictive insights using machine learning algorithms.',
     image: '/projectspics/gharbikri.png',
-    category: 'Web Development',
-    technologies: ['Next.js', 'React', 'Tailwind CSS', 'MongoDB'],
+    category: 'Data Analytics',
+    technologies: ['Python', 'Pandas', 'Scikit-Learn', 'Power BI'],
     github: 'https://github.com/reyonecy',
-    demo: 'https://gharbikri.com',
     featured: true,
   },
   {
     id: '2',
-    title: 'OrangePass',
-    description: 'An intelligent ticket booking system with smart scheduling and payment integration for seamless user experience.',
+    title: 'Computer Vision Object Detection',
+    description: 'Real-time object detection system using YOLO for identifying and classifying objects in images and video streams.',
     image: '/projectspics/orangepass.png',
-    category: 'Web Development',
-    technologies: ['Django', 'React', 'PostgreSQL'],
+    category: 'Computer Vision',
+    technologies: ['Python', 'YOLO', 'OpenCV', 'TensorFlow'],
     github: 'https://github.com/reyonecy',
     featured: true,
   },
   {
     id: '3',
-    title: 'ConnectCircle',
-    description: 'A social networking platform designed to connect professionals and foster meaningful collaborations.',
+    title: 'Sentiment Analysis Engine',
+    description: 'NLP-based sentiment analysis tool that processes text data to determine emotional tone and opinions.',
     image: '/projectspics/connectcircle.png',
-    category: 'Web Development',
-    technologies: ['Next.js', 'Node.js', 'MongoDB'],
+    category: 'AI Applications',
+    technologies: ['Python', 'NLTK', 'TensorFlow', 'Pandas'],
     github: 'https://github.com/reyonecy',
     featured: true,
   },
@@ -87,7 +84,7 @@ export const certifications: Certification[] = [
   {
     id: '1',
     name: 'Machine Learning Specialization',
-    issuer: 'Coursera',
+    issuer: 'Coursera - Stanford',
     date: '2024',
     category: 'AI & ML',
     verificationLink: '#',
@@ -102,10 +99,18 @@ export const certifications: Certification[] = [
   },
   {
     id: '3',
-    name: 'AWS Cloud Practitioner',
-    issuer: 'Amazon Web Services',
+    name: 'Deep Learning Specialization',
+    issuer: 'Coursera - DeepLearning.AI',
     date: '2023',
-    category: 'Cloud',
+    category: 'AI & ML',
+    verificationLink: '#',
+  },
+  {
+    id: '4',
+    name: 'TensorFlow Developer Certificate',
+    issuer: 'Google',
+    date: '2023',
+    category: 'AI & ML',
     verificationLink: '#',
   },
 ];
@@ -113,21 +118,20 @@ export const certifications: Certification[] = [
 export const experiences: Experience[] = [
   {
     id: '1',
-    title: 'Open Source Contributor',
-    organization: 'Various Projects',
+    title: 'Data Analyst Intern',
+    organization: 'Tech Company',
     type: 'work',
-    startDate: '2022-07',
+    startDate: '2024-01',
     endDate: 'Present',
-    description: 'Contributing to open source projects in AI and web development.',
+    description: 'Analyzing large datasets, building predictive models, and creating data visualizations.',
   },
   {
     id: '2',
-    title: 'Software Developer',
-    organization: 'Personal Projects',
+    title: 'ML Research Contributor',
+    organization: 'Open Source Projects',
     type: 'work',
-    startDate: '2020-05',
-    endDate: '2021-01',
-    description: 'Built various personal projects exploring different technologies.',
+    startDate: '2023-06',
+    description: 'Contributing to machine learning libraries and AI research projects.',
   },
 ];
 
@@ -136,7 +140,7 @@ export const education: Education[] = [
     degree: 'BSc. Computer Science and Information Technology',
     institution: 'Tribhuvan University',
     duration: '2022 - 2026',
-    coursework: ['Data Structures', 'Algorithms', 'Database Systems', 'Machine Learning'],
+    coursework: ['Machine Learning', 'Data Mining', 'Database Systems', 'Statistics', 'Artificial Intelligence'],
   },
   {
     degree: 'High School Science with Mathematics',

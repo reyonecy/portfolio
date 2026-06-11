@@ -13,7 +13,7 @@ export default function Education() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <p className="text-body text-center max-w-2xl mx-auto mb-12">
-            My academic background and coursework.
+            My academic background and relevant coursework.
           </p>
         </FadeIn>
 
@@ -26,16 +26,16 @@ export default function Education() {
                     <GraduationCap className="text-accent" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-heading text-xl font-semibold">
+                    <h3 className="font-heading text-xl font-semibold text-text-primary dark:text-text-dark-primary">
                       {edu.degree}
                     </h3>
-                    <p className="text-text-secondary mt-1">
+                    <p className="text-text-secondary dark:text-text-dark-secondary mt-1">
                       {edu.institution}
                     </p>
                     <p className="text-accent text-sm mt-1">{edu.duration}</p>
                     {edu.coursework && (
                       <div className="mt-4">
-                        <div className="flex items-center gap-2 text-text-secondary text-sm mb-2">
+                        <div className="flex items-center gap-2 text-text-secondary dark:text-text-dark-secondary text-sm mb-2">
                           <BookOpen size={16} />
                           Relevant Coursework
                         </div>
@@ -43,7 +43,7 @@ export default function Education() {
                           {edu.coursework.map((course) => (
                             <span
                               key={course}
-                              className="text-xs text-text-secondary bg-background-secondary px-2 py-1 rounded"
+                              className="text-xs text-text-secondary dark:text-text-dark-secondary bg-background-secondary dark:bg-background-dark-secondary px-2 py-1 rounded"
                             >
                               {course}
                             </span>

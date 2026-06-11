@@ -15,7 +15,6 @@ export type ProjectCategory =
   | 'Machine Learning'
   | 'Computer Vision'
   | 'AI Applications'
-  | 'Web Development'
   | 'IoT + AI';
 
 export interface Skill {
@@ -24,7 +23,7 @@ export interface Skill {
   icon?: string;
 }
 
-export type SkillCategory = 'Data' | 'AI & ML' | 'Web Development' | 'Tools';
+export type SkillCategory = 'Data' | 'AI & ML' | 'Tools';
 
 export interface Certification {
   id: string;

@@ -5,7 +5,7 @@ import { FadeIn, FadeInStagger, FadeInItem } from '@/lib/animations';
 import { certifications } from '@/lib/data';
 import { useState } from 'react';
 
-const categories = ['All', 'AI & ML', 'Data', 'Cloud'];
+const categories = ['All', 'AI & ML', 'Data'];
 
 export default function Certifications() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -16,14 +16,14 @@ export default function Certifications() {
       : certifications.filter((cert) => cert.category === activeCategory);
 
   return (
-    <section id="certifications" className="section-padding bg-background-secondary">
+    <section id="certifications" className="section-padding section-alt">
       <div className="section-container">
         <FadeIn>
           <h2 className="heading-lg mb-4 text-center">Certifications</h2>
         </FadeIn>
         <FadeIn delay={0.1}>
           <p className="text-body text-center max-w-2xl mx-auto mb-8">
-            Professional certifications that validate my expertise and commitment to learning.
+            Professional certifications validating my expertise in data science and machine learning.
           </p>
         </FadeIn>
 
@@ -36,7 +36,7 @@ export default function Certifications() {
                 className={`px-4 py-2 text-sm rounded-full transition-all ${
                   activeCategory === category
                     ? 'bg-accent text-white'
-                    : 'bg-background text-text-secondary hover:bg-accent/10'
+                    : 'bg-background dark:bg-background-dark text-text-secondary dark:text-text-dark-secondary hover:bg-accent/10'
                 }`}
               >
                 {category}
@@ -48,17 +48,17 @@ export default function Certifications() {
         <FadeInStagger className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCertifications.map((cert) => (
             <FadeInItem key={cert.id}>
-              <article className="card group hover:shadow-md transition-shadow">
+              <article className="card group hover:shadow-md dark:hover:shadow-gray-900/30 transition-shadow">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                     <Award className="text-accent" size={20} />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-heading text-lg font-semibold mb-1">
+                    <h3 className="font-heading text-lg font-semibold mb-1 text-text-primary dark:text-text-dark-primary">
                       {cert.name}
                     </h3>
-                    <p className="text-text-secondary text-sm">{cert.issuer}</p>
-                    <p className="text-text-secondary text-xs mt-1">{cert.date}</p>
+                    <p className="text-text-secondary dark:text-text-dark-secondary text-sm">{cert.issuer}</p>
+                    <p className="text-text-secondary dark:text-text-dark-secondary text-xs mt-1">{cert.date}</p>
                     {cert.verificationLink && (
                       <a
                         href={cert.verificationLink}

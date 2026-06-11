@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowDown, FolderOpen, FileText, Mail } from 'lucide-react';
+import { ArrowDown, FolderOpen, Mail } from 'lucide-react';
 import { FadeIn } from '@/lib/animations';
 import { personalInfo } from '@/lib/data';
 
@@ -20,7 +20,7 @@ export default function Hero() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <p className="text-lg md:text-xl text-text-secondary mb-6">
+              <p className="text-lg md:text-xl text-text-secondary dark:text-text-dark-secondary mb-6">
                 {personalInfo.headline}
               </p>
             </FadeIn>
@@ -28,8 +28,8 @@ export default function Hero() {
             <FadeIn delay={0.3}>
               <p className="text-body mb-8 max-w-lg">
                 I'm passionate about exploring data, building intelligent systems,
-                and crafting software solutions that solve real-world problems.
-                Currently focused on machine learning, data analytics, and web development.
+                and leveraging machine learning to solve real-world problems.
+                Currently focused on data analytics, deep learning, and AI applications.
               </p>
             </FadeIn>
 
@@ -55,7 +55,7 @@ export default function Hero() {
                   src="/profile.jpg"
                   alt={personalInfo.name}
                   fill
-                  className="object-cover rounded-full border-4 border-white shadow-lg"
+                  className="object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-lg"
                   priority
                 />
               </div>
@@ -67,7 +67,7 @@ export default function Hero() {
           <div className="flex justify-center mt-16">
             <a
               href="#about"
-              className="p-3 text-text-secondary hover:text-accent transition-colors animate-bounce"
+              className="p-3 text-text-secondary dark:text-text-dark-secondary hover:text-accent transition-colors animate-bounce"
               aria-label="Scroll to about section"
             >
               <ArrowDown size={24} />
